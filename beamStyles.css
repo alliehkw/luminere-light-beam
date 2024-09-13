@@ -1,3 +1,12 @@
+:root {
+    --right-beam-angle: -40deg;
+    --left-beam-angle: 40deg;
+    --beam-offset: -5rem;
+    --beam-thickness: 26rem;
+    --beam-width: 155vw;
+    --beam-block-height: calc(100vw * .84); /* calculated with some trig so that fun screen sizes shouldn't mess it up */
+}
+
 html {
     background-color: #000; 
     color: #FFF;
@@ -186,46 +195,49 @@ h5 {
     flex-direction: column;
     height: fit-content;
     position: relative;
-    width: 100%;
+    width: 100vw;
 }
 
 .beam-block {
    position: relative;
-   height: 120vh;
+   min-height: var(--beam-block-height);
    width: 100vw;
-   overflow: hidden;
+   margin-bottom: 15rem;
+}
+
+.beam-block.first {
+    margin-bottom: 0;
 }
 
 .beam {
     opacity: 0;
-    height: 20rem;
-    width: 100%;
-    margin-top: -10rem;
+    height: var(--beam-thickness);
+    width: var(--beam-width);
     position: absolute;
     z-index: 2;
 }
 
 .beam.right {
     transform-origin: top right;
-    transform: rotate(-45deg);
-    right: -10rem;
+    transform: rotate(var(--right-beam-angle));
+    right: var(--beam-offset);
 }
 
 .beam.right.first, .beam.left.first {
-    top: -5rem;
+    margin-top: -15rem;
 }
 
 .beam.left {
     transform-origin: top left;
-    transform: rotate(45deg);
-    left: -10rem;
+    transform: rotate(var(--left-beam-angle));
+    left: var(--beam-offset);
 }
 
 /* TODO: add in the correct color gradients and adjust them depending on which side 
 of the screen the beam is on! */
 
 .beam.left.blue {
-    background: linear-gradient(246deg, rgba(31, 9, 190, 0.1) 12.89%, #10BBED 117.84%);
+    background: linear-gradient(246deg, rgba(31, 9, 190, 0.00) 25.89%, #10BBED 117.84%);
 }
 
 .beam.right.orange {
@@ -250,6 +262,6 @@ of the screen the beam is on! */
         width: 0;
     }
     to {
-        width: 100vw;
+        width: var(--beam-width);
     }
 }
