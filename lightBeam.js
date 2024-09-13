@@ -14,7 +14,7 @@ function animateOnScroll(entries, observer) {
 // Set up the Intersection Observer
 const options = {
   root: null, // The viewport
-  threshold: 0.01, // Trigger when 1% of the beam-block is visible
+  threshold: 0.1, // Trigger when 1% of the beam-block is visible
 };
 
 const observer = new IntersectionObserver(animateOnScroll, options);

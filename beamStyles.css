@@ -5,6 +5,7 @@
     --beam-thickness: 26rem;
     --beam-width: 155vw;
     --beam-block-height: calc(100vw * .84); /* calculated with some trig so that fun screen sizes shouldn't mess it up */
+    --beam-starting-offset: -15rem;
 }
 
 html {
@@ -202,7 +203,7 @@ h5 {
    position: relative;
    min-height: var(--beam-block-height);
    width: 100vw;
-   margin-bottom: 15rem;
+   margin-bottom: calc(-1 * var(--beam-starting-offset));
 }
 
 .beam-block.first {
@@ -224,7 +225,7 @@ h5 {
 }
 
 .beam.right.first, .beam.left.first {
-    margin-top: -15rem;
+    margin-top: var(--beam-starting-offset);
 }
 
 .beam.left {
