@@ -1,0 +1,169 @@
+html {
+    background-color: #000; 
+    color: #FFF;
+    padding: 2rem;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+div.header {
+    text-align: center;
+}
+
+div.component {
+    margin-bottom: 6rem;
+}
+
+div.block {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.bias-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin-bottom: 6rem;
+}
+
+.bias-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-top: 6rem;
+}
+
+section {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -2%;
+    line-height: 110%;
+}
+
+.serif, span.serif {
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.semi-bold {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.xs {
+    font-size: 0.875rem;
+}
+
+.medium {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.centered {
+    text-align: center;
+}
+
+p { 
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    margin: 3rem 0 1rem 0;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Navbar links container */
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links horizontally */
+}
+
+/* Individual navbar links */
+.navbar-links li {
+    margin-left: 2rem; /* Spacing between links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.third {
+    width: 33%;
+    padding: 1rem;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+}
+
+.half {
+    width: 50%;
+    padding: 1rem;
+}
+
+.arch {
+    background-image: url('images/arch.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 628 / 889;
+}
+
+.content {
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.half .content {
+    padding: 5rem;
+}
