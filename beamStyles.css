@@ -197,6 +197,7 @@ h5 {
 }
 
 .beam {
+    opacity: 0;
     height: 20rem;
     width: 100%;
     margin-top: -10rem;
@@ -220,6 +221,9 @@ h5 {
     left: -10rem;
 }
 
+/* TODO: add in the correct color gradients and adjust them depending on which side 
+of the screen the beam is on! */
+
 .beam.left.blue {
     background: linear-gradient(246deg, rgba(31, 9, 190, 0.1) 12.89%, #10BBED 117.84%);
 }
@@ -228,8 +232,17 @@ h5 {
     background: linear-gradient(243deg, #FFD600 3.56%, rgba(240, 0, 27, 0.00) 77.09%);
 }
 
+.beam.right.purple {
+    background: linear-gradient(248deg, #8200AF 20.12%, rgba(129, 49, 191, 0.00) 78.19%);
+}
+
+.beam.left.pink {
+    background: linear-gradient(58deg, #AF0088 17.94%, rgba(240, 85, 36, 0.00) 79.27%);
+}
+
 .beam.start-animation {
-    animation: fillIn 1.5s ease-in-out forwards;
+    opacity: 1;
+    animation: fillIn 1s ease-in-out forwards;
 }
 
 @keyframes fillIn {
