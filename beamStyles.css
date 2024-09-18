@@ -244,7 +244,7 @@ of the screen the beam is on! */
 .beam.right.orange {
     /* background: linear-gradient(243deg, #FFD600 3.56%, rgba(240, 0, 27, 0.00) 77.09%); */
     /* background: linear-gradient(270deg, #FFD600 0%, #F8790C 43.5%, rgba(240, 0, 27, 0.00) 100%); */
-    background: linear-gradient(270deg, rgba(255,214,0,0.8) 0%, rgba(248,121,12,0.5) 40%, rgba(240,0,27,0.0) 80%, rgba(240,0,27,0) 100%);
+    background: linear-gradient(270deg, rgba(255,214,0,0.8) 0%, rgba(248,121,12,0.5) 40%, rgba(240,0,27,0.1) 70%, rgba(240,0,27,0) 100%);
 }
 
 .beam.right.purple {
