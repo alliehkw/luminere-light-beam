@@ -6,6 +6,12 @@
     --beam-width: 155vw;
     --beam-block-height: calc(100vw * .84); /* calculated with some trig so that fun screen sizes shouldn't mess it up */
     --beam-starting-offset: -15rem;
+    --gradient-right-to-left-angle: 270deg;
+    --gradient-left-to-right-angle: 90deg;
+    --orange-gradient: rgba(255,214,0,0.8) 0%, rgba(248,121,12,0.5) 40%, rgba(240,0,27,0.1) 70%, rgba(240,0,27,0) 100%;
+    --blue-gradient: rgba(16,187,237,0.5) 0%, rgba(24,98,214,0.5) 40%, rgba(31,9,190,0.1) 85%, rgba(31,9,190,0) 100%;
+    --purple-gradient: rgba(144,81,174,0.9) 0%, rgba(129,25,183,0.4) 40%, rgba(129,49,191,0.1) 85%, rgba(129,49,191,0) 100%;
+    --pink-gradient: rgba(175,0,136,0.8) 0%, rgba(207,42,86,0.5) 40%, rgba(240,85,36,0.1) 65%, rgba(240,85,36,0) 100%;
 }
 
 html {
@@ -234,22 +240,36 @@ h5 {
     left: var(--beam-offset);
 }
 
-/* TODO: add in the correct color gradients and adjust them depending on which side 
-of the screen the beam is on! */
-
 .beam.left.blue {
-    background: linear-gradient(90deg, rgba(16,187,237,0.5) 0%, rgba(24,98,214,0.5) 40%, rgba(31,9,190,0.1) 85%, rgba(31,9,190,0) 100%);
+    background: linear-gradient(var(--gradient-left-to-right-angle), var(--blue-gradient));
+}
+
+.beam.right.blue {
+    background: linear-gradient(var(--gradient-right-to-left-angle), var(--blue-gradient));
+}
+
+.beam.left.orange {
+    background: linear-gradient(var(--gradient-left-to-right-angle), var(--orange-gradient));
 }
 
 .beam.right.orange {
-    background: linear-gradient(270deg, rgba(255,214,0,0.8) 0%, rgba(248,121,12,0.5) 40%, rgba(240,0,27,0.1) 70%, rgba(240,0,27,0) 100%);
+    background: linear-gradient(var(--gradient-right-to-left-angle), var(--orange-gradient));
+}
+
+.beam.left.purple {
+    background: linear-gradient(var(--gradient-left-to-right-angle), var(--purple-gradient));
 }
 
 .beam.right.purple {
-    background: linear-gradient(270deg, rgba(144,81,174,0.9) 0%, rgba(129,25,183,0.4) 40%, rgba(129,49,191,0.1) 85%, rgba(129,49,191,0) 100%);}
+    background: linear-gradient(var(--gradient-right-to-left-angle), var(--purple-gradient));
+}
 
 .beam.left.pink {
-    background: linear-gradient(90deg, rgba(175,0,136,0.8) 0%, rgba(207,42,86,0.5) 40%, rgba(240,85,36,0.1) 65%, rgba(240,85,36,0) 100%);
+    background: linear-gradient(var(--gradient-left-to-right-angle), var(--pink-gradient));
+}
+
+.beam.right.pink {
+    background: linear-gradient(var(--gradient-right-to-left-angle), var(--pink-gradient));
 }
 
 .beam.start-animation {
