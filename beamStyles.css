@@ -238,21 +238,18 @@ h5 {
 of the screen the beam is on! */
 
 .beam.left.blue {
-    background: linear-gradient(246deg, rgba(31, 9, 190, 0.00) 25.89%, #10BBED 117.84%);
+    background: linear-gradient(90deg, rgba(16,187,237,0.5) 0%, rgba(24,98,214,0.5) 40%, rgba(31,9,190,0.1) 85%, rgba(31,9,190,0) 100%);
 }
 
 .beam.right.orange {
-    /* background: linear-gradient(243deg, #FFD600 3.56%, rgba(240, 0, 27, 0.00) 77.09%); */
-    /* background: linear-gradient(270deg, #FFD600 0%, #F8790C 43.5%, rgba(240, 0, 27, 0.00) 100%); */
     background: linear-gradient(270deg, rgba(255,214,0,0.8) 0%, rgba(248,121,12,0.5) 40%, rgba(240,0,27,0.1) 70%, rgba(240,0,27,0) 100%);
 }
 
 .beam.right.purple {
-    background: linear-gradient(248deg, #8200AF 20.12%, rgba(129, 49, 191, 0.00) 78.19%);
-}
+    background: linear-gradient(270deg, rgba(144,81,174,0.9) 0%, rgba(129,25,183,0.4) 40%, rgba(129,49,191,0.1) 85%, rgba(129,49,191,0) 100%);}
 
 .beam.left.pink {
-    background: linear-gradient(58deg, #AF0088 17.94%, rgba(240, 85, 36, 0.00) 79.27%);
+    background: linear-gradient(90deg, rgba(175,0,136,0.8) 0%, rgba(207,42,86,0.5) 40%, rgba(240,85,36,0.1) 65%, rgba(240,85,36,0) 100%);
 }
 
 .beam.start-animation {
